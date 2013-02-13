@@ -1,0 +1,22 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="clr-namespace:LayoutEditor.Converters"
+    xmlns:local="clr-namespace:LayoutEditor.LayoutEditorControl;assembly=LayoutEditor.LayoutEditorControl"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="LayoutEditor.Views.WorkAreaView"
+    >
+
+    <Grid>
+        <local:LayoutEditorControl Visibility="{Binding LayoutEditorPopulation}"
+                                 
+            LoadUserLayoutCommand="{Binding LoadUserLayoutCommand}"
+            SelectionCommand="{Binding SelectionCommand}"
+            SaveCommand="{Binding SaveCommand}"
+            CurrentStateChangeCommand="{Binding CurrentStateChangeCommand}"
+            UserSettings="{Binding UserSettings}"
+            LayoutContent="{Binding LayoutEditorPopulation}"
+            UpdatedUserLayout="{Binding UpdatedUserLayout}"
+            />
+    	
+    </Grid>
+</UserControl>

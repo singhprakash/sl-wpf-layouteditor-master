@@ -1,0 +1,26 @@
+﻿<configuration>
+  <system.serviceModel>
+    <bindings>
+      <customBinding>
+        <binding name="CustomBinding_ServiceLayouts">
+          <binaryMessageEncoding />
+          <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647">
+            <extendedProtectionPolicy policyEnforcement="Never" />
+          </httpTransport>
+        </binding>
+        <binding name="CustomBinding_ServiceLayouts1">
+          <binaryMessageEncoding />
+          <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+        </binding>
+      </customBinding>
+    </bindings>
+    <client>
+      <!--<endpoint address="http://localhost:4243/ServiceLayouts.svc"
+          binding="customBinding" bindingConfiguration="CustomBinding_ServiceLayouts"
+          contract="ServiceReferenceLayouts.ServiceLayouts" name="CustomBinding_ServiceLayouts" />-->
+      <endpoint address="http://2de0ffffe2714739ad9291e5423c0d18.cloudapp.net/ServiceLayouts.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_ServiceLayouts1"
+                contract="ServiceReferenceLayouts.ServiceLayouts" name="CustomBinding_ServiceLayouts1" />
+    </client>
+  </system.serviceModel>
+</configuration>

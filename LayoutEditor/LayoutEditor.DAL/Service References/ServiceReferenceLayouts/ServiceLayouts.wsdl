@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="http://2de0ffffe2714739ad9291e5423c0d18.cloudapp.net/ServiceLayouts.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="http://2de0ffffe2714739ad9291e5423c0d18.cloudapp.net/ServiceLayouts.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ServiceLayouts_SaveUserFlags_InputMessage">
+    <wsdl:part name="parameters" element="SaveUserFlags" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_SaveUserFlags_OutputMessage">
+    <wsdl:part name="parameters" element="SaveUserFlagsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_LoadUserFlags_InputMessage">
+    <wsdl:part name="parameters" element="LoadUserFlags" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_LoadUserFlags_OutputMessage">
+    <wsdl:part name="parameters" element="LoadUserFlagsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_GetFixedLayoutWithFlags_InputMessage">
+    <wsdl:part name="parameters" element="GetFixedLayoutWithFlags" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_GetFixedLayoutWithFlags_OutputMessage">
+    <wsdl:part name="parameters" element="GetFixedLayoutWithFlagsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_GetUserLayoutWithFlags_InputMessage">
+    <wsdl:part name="parameters" element="GetUserLayoutWithFlags" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_GetUserLayoutWithFlags_OutputMessage">
+    <wsdl:part name="parameters" element="GetUserLayoutWithFlagsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_GetUserLayout_InputMessage">
+    <wsdl:part name="parameters" element="GetUserLayout" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_GetUserLayout_OutputMessage">
+    <wsdl:part name="parameters" element="GetUserLayoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_GetFixedLayout_InputMessage">
+    <wsdl:part name="parameters" element="GetFixedLayout" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_GetFixedLayout_OutputMessage">
+    <wsdl:part name="parameters" element="GetFixedLayoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_SaveUserLayout_InputMessage">
+    <wsdl:part name="parameters" element="SaveUserLayout" />
+  </wsdl:message>
+  <wsdl:message name="ServiceLayouts_SaveUserLayout_OutputMessage">
+    <wsdl:part name="parameters" element="SaveUserLayoutResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceLayouts">
+    <wsdl:operation name="SaveUserFlags">
+      <wsdl:input wsaw:Action="urn:ServiceLayouts/SaveUserFlags" message="ServiceLayouts_SaveUserFlags_InputMessage" />
+      <wsdl:output wsaw:Action="urn:ServiceLayouts/SaveUserFlagsResponse" message="ServiceLayouts_SaveUserFlags_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserFlags">
+      <wsdl:input wsaw:Action="urn:ServiceLayouts/LoadUserFlags" message="ServiceLayouts_LoadUserFlags_InputMessage" />
+      <wsdl:output wsaw:Action="urn:ServiceLayouts/LoadUserFlagsResponse" message="ServiceLayouts_LoadUserFlags_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedLayoutWithFlags">
+      <wsdl:input wsaw:Action="urn:ServiceLayouts/GetFixedLayoutWithFlags" message="ServiceLayouts_GetFixedLayoutWithFlags_InputMessage" />
+      <wsdl:output wsaw:Action="urn:ServiceLayouts/GetFixedLayoutWithFlagsResponse" message="ServiceLayouts_GetFixedLayoutWithFlags_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLayoutWithFlags">
+      <wsdl:input wsaw:Action="urn:ServiceLayouts/GetUserLayoutWithFlags" message="ServiceLayouts_GetUserLayoutWithFlags_InputMessage" />
+      <wsdl:output wsaw:Action="urn:ServiceLayouts/GetUserLayoutWithFlagsResponse" message="ServiceLayouts_GetUserLayoutWithFlags_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLayout">
+      <wsdl:input wsaw:Action="urn:ServiceLayouts/GetUserLayout" message="ServiceLayouts_GetUserLayout_InputMessage" />
+      <wsdl:output wsaw:Action="urn:ServiceLayouts/GetUserLayoutResponse" message="ServiceLayouts_GetUserLayout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedLayout">
+      <wsdl:input wsaw:Action="urn:ServiceLayouts/GetFixedLayout" message="ServiceLayouts_GetFixedLayout_InputMessage" />
+      <wsdl:output wsaw:Action="urn:ServiceLayouts/GetFixedLayoutResponse" message="ServiceLayouts_GetFixedLayout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveUserLayout">
+      <wsdl:input wsaw:Action="urn:ServiceLayouts/SaveUserLayout" message="ServiceLayouts_SaveUserLayout_InputMessage" />
+      <wsdl:output wsaw:Action="urn:ServiceLayouts/SaveUserLayoutResponse" message="ServiceLayouts_SaveUserLayout_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,98 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutEditor.Common", "LayoutEditor.Common\LayoutEditor.Common.csproj", "{A55F3175-FD83-4FE2-B69F-CEFFED97A5B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutEditor.DAL", "LayoutEditor.DAL\LayoutEditor.DAL.csproj", "{95BC0997-6398-4BE9-8C00-5B2ACEA58A55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutEditor", "LayoutEditor\LayoutEditor.csproj", "{888A2305-A91F-412E-BC7A-6B5FBC8D0187}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutEditor.Web", "LayoutEditor.Web\LayoutEditor.Web.csproj", "{0BF38B52-58A3-4DF1-BF23-DAF608DBF9E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3CB4FAFE-5E83-413A-8C50-97B18288EC22}"
+	ProjectSection(SolutionItems) = preProject
+		References\DazdaqCommon.dll = References\DazdaqCommon.dll
+		References\DLogs.dll = References\DLogs.dll
+		References\LayoutEditor.LayoutEditorControl.dll = References\LayoutEditor.LayoutEditorControl.dll
+		References\PlateControl2DSilverlight.dll = References\PlateControl2DSilverlight.dll
+		References\System.Windows.Controls.Layout.Toolkit.dll = References\System.Windows.Controls.Layout.Toolkit.dll
+		References\System.Windows.Controls.Toolkit.dll = References\System.Windows.Controls.Toolkit.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutEditor.UnitTests", "LayoutEditor.UnitTests\LayoutEditor.UnitTests.csproj", "{0A262227-4B32-4BDF-8DAF-FA1B31C1EC01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{0C7F5A6D-7E8C-4D1F-9BF3-9AF390E42F69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLayer", "BusinessLayer", "{5AA9E95B-3C27-4795-84BE-072117761AE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UIHosts", "UIHosts", "{E6320FB9-1655-4E6E-A606-D5110BC1E5BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutEditor.LayoutEditorControl", "LayoutEditor.LayoutEditorControl\LayoutEditor.LayoutEditorControl.csproj", "{F18EB232-34E7-45B3-AB86-A486FB9E0451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutEditor.Models", "LayoutEditor.Models\LayoutEditor.Models.csproj", "{83CC1EE7-65A8-4FD1-A96E-D77484FC7590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutEditor.LayoutEditorIntegration", "LayoutEditor.LayoutEditorIntegration\LayoutEditor.LayoutEditorIntegration.csproj", "{7F849A68-DCE8-4050-83AC-5A2921D47906}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutEditor.LayoutEditorIntegration.Web", "LayoutEditor.LayoutEditorIntegration.Web\LayoutEditor.LayoutEditorIntegration.Web.csproj", "{4DDCCEB1-D048-4957-A0B3-7AFB91C9FE8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A55F3175-FD83-4FE2-B69F-CEFFED97A5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A55F3175-FD83-4FE2-B69F-CEFFED97A5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A55F3175-FD83-4FE2-B69F-CEFFED97A5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A55F3175-FD83-4FE2-B69F-CEFFED97A5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95BC0997-6398-4BE9-8C00-5B2ACEA58A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BC0997-6398-4BE9-8C00-5B2ACEA58A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95BC0997-6398-4BE9-8C00-5B2ACEA58A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95BC0997-6398-4BE9-8C00-5B2ACEA58A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{888A2305-A91F-412E-BC7A-6B5FBC8D0187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{888A2305-A91F-412E-BC7A-6B5FBC8D0187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{888A2305-A91F-412E-BC7A-6B5FBC8D0187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{888A2305-A91F-412E-BC7A-6B5FBC8D0187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BF38B52-58A3-4DF1-BF23-DAF608DBF9E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF38B52-58A3-4DF1-BF23-DAF608DBF9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF38B52-58A3-4DF1-BF23-DAF608DBF9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF38B52-58A3-4DF1-BF23-DAF608DBF9E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A262227-4B32-4BDF-8DAF-FA1B31C1EC01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A262227-4B32-4BDF-8DAF-FA1B31C1EC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A262227-4B32-4BDF-8DAF-FA1B31C1EC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A262227-4B32-4BDF-8DAF-FA1B31C1EC01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18EB232-34E7-45B3-AB86-A486FB9E0451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F18EB232-34E7-45B3-AB86-A486FB9E0451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F18EB232-34E7-45B3-AB86-A486FB9E0451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F18EB232-34E7-45B3-AB86-A486FB9E0451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CC1EE7-65A8-4FD1-A96E-D77484FC7590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83CC1EE7-65A8-4FD1-A96E-D77484FC7590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83CC1EE7-65A8-4FD1-A96E-D77484FC7590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83CC1EE7-65A8-4FD1-A96E-D77484FC7590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F849A68-DCE8-4050-83AC-5A2921D47906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F849A68-DCE8-4050-83AC-5A2921D47906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F849A68-DCE8-4050-83AC-5A2921D47906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F849A68-DCE8-4050-83AC-5A2921D47906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DDCCEB1-D048-4957-A0B3-7AFB91C9FE8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDCCEB1-D048-4957-A0B3-7AFB91C9FE8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDCCEB1-D048-4957-A0B3-7AFB91C9FE8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDCCEB1-D048-4957-A0B3-7AFB91C9FE8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95BC0997-6398-4BE9-8C00-5B2ACEA58A55} = {5AA9E95B-3C27-4795-84BE-072117761AE9}
+		{0A262227-4B32-4BDF-8DAF-FA1B31C1EC01} = {5AA9E95B-3C27-4795-84BE-072117761AE9}
+		{A55F3175-FD83-4FE2-B69F-CEFFED97A5B5} = {5AA9E95B-3C27-4795-84BE-072117761AE9}
+		{83CC1EE7-65A8-4FD1-A96E-D77484FC7590} = {5AA9E95B-3C27-4795-84BE-072117761AE9}
+		{0BF38B52-58A3-4DF1-BF23-DAF608DBF9E6} = {E6320FB9-1655-4E6E-A606-D5110BC1E5BB}
+		{888A2305-A91F-412E-BC7A-6B5FBC8D0187} = {E6320FB9-1655-4E6E-A606-D5110BC1E5BB}
+		{4DDCCEB1-D048-4957-A0B3-7AFB91C9FE8C} = {E6320FB9-1655-4E6E-A606-D5110BC1E5BB}
+		{7F849A68-DCE8-4050-83AC-5A2921D47906} = {E6320FB9-1655-4E6E-A606-D5110BC1E5BB}
+		{F18EB232-34E7-45B3-AB86-A486FB9E0451} = {0C7F5A6D-7E8C-4D1F-9BF3-9AF390E42F69}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

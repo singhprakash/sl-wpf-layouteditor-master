@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="LayoutEditor.LayoutEditorIntegration.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:views="clr-namespace:LayoutEditor.LayoutEditorIntegration.Views"
+    >
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <views:MainMenuView />
+        <views:WorkAreaView Grid.Row="1" />
+    </Grid>
+</UserControl>

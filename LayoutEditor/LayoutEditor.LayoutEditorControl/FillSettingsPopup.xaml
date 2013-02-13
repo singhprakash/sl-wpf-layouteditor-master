@@ -1,0 +1,47 @@
+﻿<controls:ChildWindow x:Class="LayoutEditor.LayoutEditorControl.FillSettingsPopup"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           Width="330" Height="270" 
+           Title="Fill Settings" >
+
+    <Grid x:Name="LayoutRoot" Margin="2" Height="224">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="12*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120*" />
+            <ColumnDefinition Width="92*" />
+            <ColumnDefinition Width="95*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="descGroupStart" Grid.Row="0" Grid.Column="0" Text="Group Start:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <TextBox x:Name="textBoxGroupNum" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding Path=GroupNum, Mode=TwoWay, UpdateSourceTrigger=Explicit,ValidatesOnExceptions=True}" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="39" Margin="0,4" />
+        <Button x:Name="ResetButton" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Reset" Click="ResetButton_Click" Width="75" Height="23" HorizontalAlignment="Center" Margin="0,5,20,4" />
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Replicates:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <TextBox x:Name="textBoxReplicates" Grid.Row="1" Grid.Column="1" Text="{Binding Path=Replicates, Mode=TwoWay, UpdateSourceTrigger=Explicit,ValidatesOnExceptions=True}" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="25" Margin="0,4" />
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Fill Direction:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <RadioButton x:Name="radioButtonAcross" Grid.Row="2" Grid.Column="1" GroupName="FillDirection"  Content="By Row" IsChecked="{Binding Path=FillDirectionIsAcross, Mode=TwoWay, UpdateSourceTrigger=Explicit}" VerticalAlignment="Center" Margin="0,8,0,7" />
+        <RadioButton x:Name="radioButtonDown" Grid.Row="2" Grid.Column="2" GroupName="FillDirection" Content="By Column" IsChecked="{Binding Path=FillDirectionIsDown, Mode=TwoWay, UpdateSourceTrigger=Explicit}" VerticalAlignment="Center" />
+
+        <CheckBox x:Name="checkboxRectangleMode" Grid.Row="3" Grid.ColumnSpan="2" Content="Rectangular Fill" HorizontalAlignment="Left" Margin="0,9,0,0" VerticalAlignment="Top" Width="126" IsChecked="{Binding Path=RectangleMode, Mode=TwoWay, UpdateSourceTrigger=Explicit}" Click="checkboxRectangleMode_Click" Grid.Column="1" />
+        <TextBlock x:Name="descRepDirection" Grid.Row="4" Grid.Column="0" Text="Replicate Direction:" VerticalAlignment="Center" HorizontalAlignment="Right" />
+        <RadioButton x:Name="radioReplicateDirectionByRow" Grid.Row="4" Grid.Column="1" GroupName="ReplicateDirection"  Content="By Row" IsChecked="{Binding Path=ReplicateDirectionIsRow, Mode=TwoWay, UpdateSourceTrigger=Explicit}" VerticalAlignment="Center" IsEnabled="{Binding ElementName=checkboxRectangleMode, Path=IsChecked}" Margin="0,8,0,7" />
+        <RadioButton x:Name="radioReplicateDirectionByCol" Grid.Row="4" Grid.Column="2" GroupName="ReplicateDirection" Content="By Column" IsChecked="{Binding Path=ReplicateDirectionIsColumn, Mode=TwoWay, UpdateSourceTrigger=Explicit}" VerticalAlignment="Center" IsEnabled="{Binding ElementName=checkboxRectangleMode, Path=IsChecked}" />
+
+        <Button x:Name="OKButton" Grid.Row="5" Grid.Column="1" Content="OK" Click="OKButton_Click" Width="75" Height="23" HorizontalAlignment="Center"  Margin="0,5,18,4" />
+        <Button x:Name="CancelButton" Grid.Row="5" Grid.Column="2" Content="Cancel" Click="CancelButton_Click" Width="75" Height="23" HorizontalAlignment="Center" Margin="0,5,20,4" />
+
+        <CheckBox x:Name="checkboxShowNextTime" Grid.Row="6" Grid.ColumnSpan="3" Content="Display these settings on next fill" HorizontalAlignment="Left" Margin="19,7,0,0" VerticalAlignment="Top" Width="249" IsChecked="{Binding Path=ShowNextTime, Mode=TwoWay, UpdateSourceTrigger=Explicit}"/>
+    </Grid>
+</controls:ChildWindow>
